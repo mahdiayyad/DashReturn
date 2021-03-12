@@ -29,7 +29,7 @@
     <!-- <a href="">&#9776;</a> -->
     <!-- HOME SECTION -->
 
-    <section class="home-section">
+    <section class="home-section" id="home">
       <a href="javascript:void(0);" class="sidebar-btn" onclick="openNav()"
         >&#9776;
       </a>
@@ -48,8 +48,8 @@
               width="150"
             />
           </li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Team</a></li>
           <li><a href="#">Testmonials</a></li>
@@ -65,46 +65,111 @@
           perspiciatis laudantium libero aspernatur suscipit quam et. Tenetur
           sapiente doloremque assumenda!
         </p>
-        <button class="read-more-btn">Read More</button>
+        <button class="read-more-btn" id="readMoreBtn">Read More</button>
         <button class="get-started-btn">Get Started</button>
       </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1 class="modal-header">We Are Creative Agency</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
+            beatae nam iste enim accusamus quidem voluptas impedit corrupti
+            excepturi fugit rem vero architecto labore sunt non quia inventore,
+            culpa eos? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Molestias officia odit consequuntur cum illum possimus vero
+            repellendus modi pariatur sit non, obcaecati in vel et a porro
+            exercitationem. Repudiandae, ex! Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Nisi saepe libero magnam cumque
+            tempora? Nisi molestiae quibusdam commodi, eaque porro earum
+            reprehenderit at dolorem blanditiis natus eius alias harum incidunt.
+          </p>
+        </div>
+      </div>
     </section>
+
     <!-- HOME SECTION END -->
 
     <!-- ABOUT SECTION -->
 
-    <section class="about-section">
+    <section class="about-section" id="about">
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <h1>Who We Are</h1>
-            <p>
+            <h1 class="about-header">Who We Are</h1>
+            <span class="line"></span>
+            <p class="about-p">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
               temporibus, aperiam similique enim officiis laborum laudantium
               perferendis odit delectus. Labore, sunt adipisci magnam pariatur
               iure dolorum. Dolor eaque consequatur quis!
             </p>
             <div class="checked">
-              <span><i class="fas fa-check"></i></span>
-              <p>Inject homour in the randomised</p>
-              <span><i class="fas fa-check"></i></span>
-              <p>Many variations the passages</p>
-              <span><i class="fas fa-check"></i></span>
-              <p>Many majorityhave to sufferd</p>
-              <span><i class="fas fa-check"></i></span>
-              <p>Of passages of lorem ipasu</p>
-              <span><i class="fas fa-check"></i></span>
-              <p>Inject homour in the randomised</p>
-              <span><i class="fas fa-check"></i></span>
-              <p>Many varations the passages</p>
+              <p></p>
+                <span><i class="fas fa-check"></i></span> &nbsp; Inject homour in the
+                randomised
+              </p>
+
+              <p>
+                <span><i class="fas fa-check"></i></span> &nbsp; Many variations the
+                passages
+              </p>
+              <p>
+                <span><i class="fas fa-check"></i></span> &nbsp; Many majorityhave to
+                sufferd
+              </p>
+              <p>
+                <span><i class="fas fa-check"></i></span> &nbsp; Of passages of lorem
+                ipasu
+              </p>
+              <p>
+                <span><i class="fas fa-check"></i></span> &nbsp; Inject homour in the
+                randomised
+              </p>
+              <p>
+                <span><i class="fas fa-check"></i></span> &nbsp; Many varations the
+                passages
+              </p>
             </div>
           </div>
-          <div class="col-6"></div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-6">
+                <div class="box-1">
+                  <i class="far fa-gem about-icon"></i>
+                  <p class="box-p">Inject Homour in The Randomised</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="box-2">
+                  <i class="fas fa-briefcase about-icon"></i>
+                  <p class="box-p">Many Variations The Passages</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="box-3">
+                  <i class="fas fa-bookmark about-icon"></i>
+                  <p class="box-p">Of Passages Of Lorem Ipasu</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="box-4">
+                  <i class="fas fa-database about-icon"></i>
+                  <p class="box-p">Majority Have To Sufferd</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- ABOUT SECTION EMD -->
-
+    <script>
+      let ini = document.querySelector(".modal");
+      ini.classList.add("hideModal");
+    </script>
     <script src="/js/index.js"></script>
   </body>
 </html>
