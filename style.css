@@ -277,6 +277,44 @@ div.modal-content h1.modal-header {
     z-index: 2;
   }
 }
+
+.fa-arrow-down {
+  font-size: 50px;
+  z-index: 1;
+  cursor: pointer;
+  color: #ff9810;
+  transition: 0.2s;
+}
+
+.fa-arrow-down:hover {
+  color: #006666;
+}
+
+.bounce {
+  position: absolute;
+  top: 84%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
 /*/////////////////// HOME SECTION END ///////////////////*/
 
 /*/////////////////// ABOUT SECTION ///////////////////*/
@@ -446,6 +484,15 @@ div.modal-content h1.modal-header {
   div.modal-content h1.modal-header {
     margin-bottom: 0px;
     padding: 0px 0px 40px 0px;
+  }
+
+  .bounce {
+    top: 80%;
+    left: 44%;
+  }
+
+  .fa-arrow-down {
+    font-size: 60px;
   }
 }
 
