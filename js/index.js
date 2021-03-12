@@ -13,3 +13,4 @@ const x = 10;
 const y = 20;
 
 const re = x + y;
+console.log("Hello World!");
