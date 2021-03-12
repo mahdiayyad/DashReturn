@@ -440,6 +440,13 @@ div.modal-content h1.modal-header {
   .line {
     margin-left: 110px;
   }
+  .modal-content {
+    width: 90%;
+  }
+  div.modal-content h1.modal-header {
+    margin-bottom: 0px;
+    padding: 0px 0px 40px 0px;
+  }
 }
 
 /*/////////////////// MOBILE RESPONSIVE END ///////////////////*/
