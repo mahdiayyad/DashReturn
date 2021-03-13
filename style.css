@@ -448,12 +448,16 @@ div.modal-content h1.modal-header {
   .sidebar-btn {
     display: block;
     text-decoration: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    color: #fff;
+    color: #006666;
     cursor: pointer;
     font-size: 30px;
+  }
+
+  .sidebar-btn:hover {
+    color: #ff9810;
   }
 
   .sidenav {
@@ -521,12 +525,21 @@ div.modal-content h1.modal-header {
     width: 100%;
   }
 
+  .col-6 {
+    margin-left: 10px;
+  }
+
   .container {
     padding: 50px;
   }
 
   .about-header {
     text-align: center;
+  }
+
+  .about-icon {
+    font-size: 25px;
+    padding: 17px 121px 0;
   }
   .line {
     margin-left: 110px;
@@ -546,6 +559,7 @@ div.modal-content h1.modal-header {
 
   .fa-arrow-down {
     font-size: 60px;
+    padding-top: 20px;
   }
 
   .line-services {
