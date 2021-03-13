@@ -166,18 +166,19 @@ ul li a:hover {
 }
 
 .read-more-btn {
+  background-color: #ff9810;
   padding: 5px;
   font-weight: 800;
   border: 0;
   border-radius: 5px;
-  color: #000;
+  color: #fff;
   width: 10%;
   font-size: 19px;
   transition: 0.2s ease-in-out;
 }
 
 .get-started-btn {
-  background-color: #0066ff;
+  background-color: #006666;
   font-weight: 800;
   padding: 5px;
   border: 0;
@@ -319,7 +320,7 @@ div.modal-content h1.modal-header {
 
 /*/////////////////// ABOUT SECTION ///////////////////*/
 .about-header {
-  color: #0066ff;
+  color: #006666;
   font-weight: 900;
 }
 
@@ -328,14 +329,14 @@ div.modal-content h1.modal-header {
 }
 
 .line {
-  border: 2px solid #0066ff;
+  border: 2px solid #006666;
   width: 80px;
   display: block;
   margin: 20px 0 20px 90px;
 }
 
 .fa-check {
-  color: #0066ff;
+  color: #006666;
 }
 
 .box-1,
@@ -365,12 +366,63 @@ div.modal-content h1.modal-header {
 .box-2:hover,
 .box-3:hover,
 .box-4:hover {
-  background-color: #0066ff;
+  background-color: #006666;
   cursor: pointer;
-  color: #fff;
-  border: 2px solid #fff;
+  color: #ff9810;
+  border: 2px solid #ff9810;
 }
 /*/////////////////// ABOUT SECTION END ///////////////////*/
+
+/*/////////////////// SERVICES SECTION ///////////////////*/
+
+.services-section {
+  background-color: #c5c6c7;
+}
+
+.services-header {
+  font-weight: 600;
+  color: #006666;
+  text-align: center;
+}
+
+.line-services {
+  border: 2px solid #006666;
+  width: 80px;
+  display: block;
+  margin: 20px 0 20px 46%;
+}
+
+.services-box {
+  border: 2px solid #000;
+  height: 250;
+  width: 100%;
+  margin: 20px 15px;
+  transition: 0.4s ease-in-out;
+}
+
+.services-box:hover {
+  background-color: #006666;
+  cursor: pointer;
+  color: #ff9810;
+  border: 2px solid #ff9810;
+}
+
+.services-icon {
+  font-size: 20px;
+  padding: 20px 47%;
+}
+
+.services-box-header {
+  text-align: center;
+  font-weight: 600;
+}
+
+.services-box-p {
+  font-size: 15px;
+  text-align: center;
+}
+
+/*/////////////////// SERVICES SECTION END ///////////////////*/
 
 /*/////////////////// MOBILE RESPONSIVE ///////////////////*/
 
@@ -464,7 +516,8 @@ div.modal-content h1.modal-header {
     width: 40%;
   }
 
-  .col-6 {
+  .col-6,
+  .col-4 {
     width: 100%;
   }
 
@@ -493,6 +546,10 @@ div.modal-content h1.modal-header {
 
   .fa-arrow-down {
     font-size: 60px;
+  }
+
+  .line-services {
+    margin: 20px 0 20px 37%;
   }
 }
 
