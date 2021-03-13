@@ -376,7 +376,7 @@ div.modal-content h1.modal-header {
 /*/////////////////// SERVICES SECTION ///////////////////*/
 
 .services-section {
-  background-color: #c5c6c7;
+  background: linear-gradient(90deg, #ff512f, #dd2476);
 }
 
 .services-header,
