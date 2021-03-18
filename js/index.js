@@ -4,6 +4,10 @@ let modal = document.getElementById("myModal");
 let readMoreBtn = document.getElementById("readMoreBtn");
 let span = document.getElementsByClassName("close")[0];
 
+$(window).scroll(function () {
+  $("nav").toggleClass("scrolled", $(this).scrollTop() > 50);
+});
+
 function openNav() {
   mySidenav.style.width = "250px";
 }
