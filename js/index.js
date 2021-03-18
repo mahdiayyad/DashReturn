@@ -32,42 +32,24 @@ window.onclick = function (event) {
   }
 };
 
-var galleryThumbs = new Swiper(".gallery-thumbs", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "2",
-  // coverflowEffect: {
-  //   rotate: 50,
-  //   stretch: 0,
-  //   depth: 100,
-  //   modifier: 1,
-  //   slideShadows : true,
-  // },
-
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 50,
-    modifier: 6,
-    slideShadows: false,
-  },
-});
-
-var galleryTop = new Swiper(".swiper-container.testimonial", {
-  speed: 400,
-  spaceBetween: 50,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  direction: "vertical",
-  pagination: {
-    clickable: true,
-    el: ".swiper-pagination",
-    type: "bullets",
-  },
-  thumbs: {
-    swiper: galleryThumbs,
+$(".testi5").owlCarousel({
+  loop: true,
+  margin: 30,
+  nav: false,
+  navText: [
+    '<i class="icon-arrow-left"></i>',
+    '<i class="icon-arrow-right"></i>',
+  ],
+  dots: true,
+  autoplay: true,
+  center: true,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    1024: {
+      items: 3,
+    },
   },
 });
