@@ -37,7 +37,7 @@ body {
   max-width: 1140px;
   padding: 0;
   margin: 0 auto;
-  padding-top: 6rem;
+  padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
@@ -169,7 +169,7 @@ ul li a.nav-link:hover {
 }
 
 .welcome-header {
-  font-size: 3rem;
+  font-size: 3.5em;
   margin: 0;
   color: rgb(235, 47, 6);
   font-weight: 900;
@@ -339,9 +339,29 @@ div.modal-content h1.modal-header {
 /*/ ////////////////// HOME SECTION END ///////////////////*/
 
 /*/////////////////// ABOUT SECTION ///////////////////*/
+
+.about-section {
+  background-color: rgb(214, 214, 214);
+}
+
 .about-header {
   color: rgb(33, 37, 41);
+  position: relative;
   font-weight: 900;
+}
+
+.about-header .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.about-header .letter {
+  display: inline-block;
+  line-height: 1em;
 }
 
 .about-p {
@@ -409,6 +429,7 @@ div.modal-content h1.modal-header {
 }
 
 .services-box {
+  background-color: #fff;
   border: 2px solid #fff;
   height: 250;
   width: 100%;
@@ -416,29 +437,30 @@ div.modal-content h1.modal-header {
   transition: 0.4s ease-in-out;
 }
 
-.services-box:hover {
+/* .services-box:hover {
   background-color: rgb(33, 37, 41);
   cursor: pointer;
   color: rgb(235, 47, 6);
   border: 2px solid rgb(33, 37, 41);
-}
+} */
 
 .services-icon {
   font-size: 20px;
   padding: 20px 47%;
-  color: #fff;
+  color: #000;
 }
 
 .services-box-header {
   text-align: center;
   font-weight: 600;
-  color: #fff;
+  color: #000;
+  text-decoration: underline;
 }
 
 .services-box-p {
   font-size: 15px;
   text-align: center;
-  color: #fff;
+  color: #000;
 }
 
 .service-box-2 {
@@ -450,6 +472,7 @@ div.modal-content h1.modal-header {
   margin: 20px 15px;
   cursor: pointer;
   transition: 0.4s ease-in-out;
+  border-radius: 15px;
 }
 
 .service-box-2:hover {

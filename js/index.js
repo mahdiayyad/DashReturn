@@ -3,6 +3,9 @@ let mySidenav = document.getElementById("mySidenav");
 let modal = document.getElementById("myModal");
 let readMoreBtn = document.getElementById("readMoreBtn");
 let span = document.getElementsByClassName("close")[0];
+let headerWrapper = document.querySelector(".welcome-header");
+let textWrapper = document.querySelector(".welcome-p");
+let aboutHeaderWrapper = document.querySelector(".about-header .letters");
 
 $(window).scroll(function () {
   $("nav").toggleClass("scrolled", $(this).scrollTop() > 50);
@@ -57,3 +60,73 @@ $(".testi5").owlCarousel({
     },
   },
 });
+
+// Wrap every letter in a span
+
+headerWrapper.innerHTML = headerWrapper.textContent.replace(
+  /\S/g,
+  "<span class='letter'>$&</span>"
+);
+textWrapper.innerHTML = textWrapper.textContent.replace(
+  /\S/g,
+  "<span class='paragraph'>$&</span>"
+);
+anime
+  .timeline({ loop: true })
+  .add({
+    targets: ".welcome-header .letter",
+    scale: [4, 1],
+    opacity: [0, 1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 50 * i,
+  })
+  .add({
+    targets: ".welcome-header",
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000,
+  });
+
+anime
+  .timeline({ loop: true })
+  .add({
+    targets: ".welcome-p .paragraph",
+    scale: [4, 1],
+    opacity: [0, 1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 60 * i,
+  })
+  .add({
+    targets: ".welcome-p",
+    opacity: 1,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000,
+  });
+
+aboutHeaderWrapper.innerHTML = aboutHeaderWrapper.textContent.replace(
+  /\S/g,
+  "<span class='letter'>$&</span>"
+);
+
+anime
+  .timeline({ loop: true })
+  .add({
+    targets: ".about-header .letter",
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i,
+  })
+  .add({
+    targets: ".about-header",
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000,
+  });
