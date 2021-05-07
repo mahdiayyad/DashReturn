@@ -416,7 +416,7 @@ div.modal-content h1.modal-header {
 /*/////////////////// SERVICES SECTION ///////////////////*/
 
 .services-section {
-  background: #3e4555;
+  background-image: url("../img/bg-1.jpg");
 }
 
 .services-header,
