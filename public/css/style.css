@@ -472,7 +472,6 @@ div.modal-content h1.modal-header {
   margin: 20px 15px;
   cursor: pointer;
   transition: 0.4s ease-in-out;
-  border-radius: 15px;
 }
 
 .service-box-2:hover {
